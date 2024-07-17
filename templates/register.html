@@ -1,0 +1,22 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register for Event</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Register for Event</h1>
+    <form method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone" required>
+        <label for="team_members">Team Members (comma separated, max 5):</label>
+        <input type="text" id="team_members" name="team_members">
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
